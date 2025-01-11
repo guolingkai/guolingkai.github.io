@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>AiBaseConnect - 智能链接，无限潜能</title>
+    <style>
+        /* 通用样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* 头部样式 */
+        header {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        /* 轮播图样式 */
+     .slider {
+            margin: 20px auto;
+            width: 90%;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 10px;
+            position: relative;
+        }
+        #carousel {
+            display: flex;
+            overflow: hidden;
+        }
+        #carousel img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease-in-out;
+        }
+        /* 内容部分样式 */
+     .content-section {
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+        }
+        /* 成员卡片样式 */
+     .members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+     .member-card {
+            flex-basis: calc(20% - 20px);
+            margin: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+     .member-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* 项目卡片样式 */
+     .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+     .project-card {
+            flex-basis: calc(33.33% - 20px);
+            margin: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+     .project-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* 页脚样式 */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="AiBaseConnect 的标志，点击可返回首页" style="max-width:100px;">
+        <h1>AiBaseConnect</h1>
+        <p>智能链接，无限潜能</p>
+        <nav id="main-nav">
+            <a href="#team" title="查看团队介绍">团队介绍</a>
+            <a href="#members" title="查看成员风采">成员风采</a>
+            <a href="#projects" title="查看项目成果">项目成果</a>
+            <a href="#news" title="查看新闻动态">新闻动态</a>
+            <a href="#contact" title="联系我们">联系我们</a>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <!-- 轮播图区域 -->
+        <div id="carousel">
+            <img src="path/to/slide1.jpg" alt="轮播图 1">
+            <img src="path/to/slide2.jpg" alt="轮播图 2">
+            <!-- 可以添加更多轮播图图片，并添加轮播图脚本代码 -->
+        </div>
+    </div>
+    <h2>关于我们</h2>
+    <section id="team" class="content-section team-intro">
+
+        <p>团队背景和发展历程...</p>
+    </section>
+    <h2>成员风采</h2>
+    <section id="members" class="content-section members">
+        <!-- 成员卡片 -->
+        <div class="member-card">
+            <img src="images/glk.jpg" alt="成员 1 的头像">
+            <h3>郭灵凯</h3>
+            <p>组长</p>
+            <p><a href="mailto:2769314619@qq.com">2769314619@qq.com</a></p>
+        </div>
+        <div class="member-card">
+            <img src="images/zfz.png" alt="成员 1 的头像">
+            <h3>赵辅灼</h3>
+            <p>图片训练师</p>
+            <p><a href="mailto:15583511563@qq.com">15583511563@qq.com</a></p>
+        </div>
+        <div class="member-card">
+            <img src="images/jhf.jpg" alt="成员 1 的头像">
+            <h3>靳洪飞</h3>
+            <p>文档训练师</p>
+            <p><a href="mailto:3489054404@qq.com">3489054404@qq.com</a></p>
+        </div>
+        <div class="member-card">
+            <img src=images/sbx.jpg" alt="成员 1 的头像">
+            <h3>孙波鑫</h3>
+            <p>音频训练师</p>
+            <p><a href="mailto:成员 1 邮箱地址">成员 1 邮箱地址</a></p>
+        </div>
+        <div class="member-card">
+            <img src="images/sbx.jpg" alt="成员 1 的头像">
+            <h3>熊俊</h3>
+            <p>模型推理师</p>
+            <p><a href="mailto:2071637936@qq.com">2071637936@qq.com</a></p>
+        </div>
+        <!-- 可以添加更多成员卡片 -->
+    </section>
+    <h2>项目成果</h2>
+    <section id="projects" class="content-section projects">
+        <!-- 项目展示 -->
+        <div class="project-card">
+            <img src="path/to/project1.jpg" alt="项目 1 的图片">
+            <h3>项目 1 标题</h3>
+            <p>项目 1 描述...</p>
+            <a href="project1.html">查看项目详情</a>
+        </div>
+        <!-- 可以添加更多项目卡片 -->
+    </section>
+
+    <footer>
+        <p>联系我们 | <a href="https://guolingkai.github.io">guolingkai.github.io</a></p>
+        <p>&copy; 2025 AiBaseConnect. 版权所有。</p>
+    </footer>
+    <script>
+        // 简单的轮播图脚本
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('#carousel img');
+        const totalSlides = slides.length;
+
+        function showSlides() {
+            for (let i = 0; i < totalSlides; i++) {
+                slides[i].style.transform = `translateX(-${slideIndex * 100}%)`;
+            }
+            slideIndex++;
+            if (slideIndex >= totalSlides) {
+                slideIndex = 0;
+            }
+            setTimeout(showSlides, 3000); // 3秒切换一次
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>
