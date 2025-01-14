@@ -225,10 +225,14 @@
                 您的浏览器不支持 audio 元素。
             </audio>
             <div style="margin-top: 10px;">
+                <button onclick="navigator.share({ title: '瑞雪丰年', text: '听听这首由通义生成歌词、豆包生成音乐的新年如意歌吧！', url: window.location.href })" style="cursor: pointer; background-color: #007BFF; color: white; border: none; padding: 5px 10px; border-radius: 5px;">分享</button>
+            </div>
+            <div style="margin-top: 10px;">
                 <a href="歌词/新年如意歌.txt" target="_blank">查看完整歌词</a>
                 <button onclick="navigator.share({ title: '新年如意歌', text: '听听这首由通义生成歌词、豆包生成音乐的新年如意歌吧！', url: window.location.href })" style="cursor: pointer; background-color: #007BFF; color: white; border: none; padding: 5px 10px; border-radius: 5px;">分享</button>
             </div>
         </div>
+        <video src="MP3/拉法.mp4" controls width="66%"></video>
     </section>
 
     <footer>
