@@ -42,8 +42,9 @@
             overflow: hidden;
         }
         #carousel img {
-            width: 100%;
-            height: auto;
+            width: 200px;
+            height: 200px; /* 设置固定高度 */
+            object-fit: cover; /* 保持图片比例并覆盖容器 */
             transition: transform 0.5s ease-in-out;
         }
         /* 内容部分样式 */
@@ -68,8 +69,9 @@
             text-align: center;
         }
      .member-card img {
-            max-width: 100%;
-            height: auto;
+            width: 100px; /* 设置固定宽度 */
+            height: 100px; /* 设置固定高度 */
+            object-fit: cover; /* 保持图片比例并覆盖容器 */
         }
         /* 项目卡片样式 */
      .projects {
@@ -86,8 +88,9 @@
             text-align: center;
         }
      .project-card img {
-            max-width: 100%;
-            height: auto;
+            width: 150px;
+            height: 150px; /* 设置固定高度 */
+            object-fit: cover; /* 保持图片比例并覆盖容器 */
         }
         /* 页脚样式 */
         footer {
@@ -95,6 +98,25 @@
             margin-top: 20px;
             padding: 10px;
             background-color: #f2f2f2;
+        }
+      .project-card button {
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+      .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            border-bottom: 1px dashed #007BFF;
+        }
+      .project-card a:hover {
+            color: #0056b3;
+            border-bottom: 1px solid #0056b3;
         }
     </style>
 </head>
@@ -126,7 +148,7 @@
         <div class="member-card">
             <img src="image/glk.jpg" alt="成员 1 的头像">
             <h3>郭灵凯</h3>
-            <p>组长</p>
+            <p>组长  模型推理师</p>
             <p><a href="mailto:2769314619@qq.com">2769314619@qq.com</a></p>
         </div>
         <div class="member-card">
@@ -145,74 +167,32 @@
             <img src="image/sbx.jpg" alt="成员 1 的头像">
             <h3>孙波鑫</h3>
             <p>音频训练师</p>
-            <p><a href="mailto:成员 1 邮箱地址">成员 1 邮箱地址</a></p>
+            <p><a href="mailto:2179528825@qq.com">2179528825@qq.com</a></p>
         </div>
         <div class="member-card">
             <img src="image/xj.jpg" alt="成员 1 的头像">
             <h3>熊俊</h3>
-            <p>模型推理师</p>
+            <p>数据标注师</p>
             <p><a href="mailto:2071637936@qq.com">2071637936@qq.com</a></p>
         </div>
-        <!-- 可以添加更多成员卡片 -->
     </section>
     <h2>项目成果</h2>
     <section id="projects" class="content-section projects">
         <!-- 项目展示 -->
         <div class="project-card">
-            <img src="image/newyear.png" alt="项目 1 的图片">
-            <h3>《新春的钟声》</h3>
-            <p>由通义生成歌词,海螺生成音乐</p>
-            <!-- 添加音频元素 -->
+            <!-- 设置固定尺寸并确保图片适应容器 -->
+            <img src="image/新年如意歌.png" alt="《新年如意歌》的图片" style="width: 100%; height: auto; max-width: 300px;">
+            <h3>《新年如意歌》</h3>
+            <p>由通义生成歌词,豆包生成音乐</p>
+            <!-- 使用更可靠的音频链接方式 -->
             <audio controls>
-                <source src="MP3/《新春的钟声》.mp3" type="audio/mpeg">
+                <source src="MP3/蛇年如意春.mp4" type="audio/mpeg">
                 您的浏览器不支持 audio 元素。
             </audio>
-            <a href="歌词/新春的钟声.txt">查看歌词</a>
-        </div>
-        <div class="project-card">
-            <img src="image/AI科技之光.png" alt="项目 1 的图片">
-            <h3>AI科技之光</h3>
-            <p>由kimi生成歌词,海螺生成音乐</p>
-            <!-- 添加音频元素 -->
-            <audio controls>
-                <source src="MP3/AI科技之光.mp3" type="audio/mpeg">
-                您的浏览器不支持 audio 元素。
-            </audio>
-            <a href="l">无详情</a>
-        </div>
-        </div>
-        <div class="project-card">
-            <img src="image/奋斗.png" alt="项目 1 的图片">
-            <h3>《奋斗》</h3>
-            <p>由通义生成歌词,海螺生成音乐</p>
-            <!-- 添加音频元素 -->
-            <audio controls>
-                <source src="MP3/奋斗.mp3" type="audio/mpeg">
-                您的浏览器不支持 audio 元素。
-            </audio>
-            <a href="">无歌词</a>
-        </div>
-        <div class="project-card">
-            <img src="image/AI培训之歌.jpg" alt="项目 1 的图片">
-            <h3>《AI培训之歌》</h3>
-            <p>由通义生成歌词,海螺生成音乐</p>
-            <!-- 添加音频元素 -->
-            <audio controls>
-                <source src="MP3/AI培训之歌.mp3" type="audio/mpeg">
-                您的浏览器不支持 audio 元素。
-            </audio>
-            <a href="">无歌词</a>
-        </div>
-        <div class="project-card">
-            <img src="image/人工智能.jpeg" alt="项目 1 的图片">
-            <h3>《人工智能》</h3>
-            <p>由通义生成歌词,海螺生成音乐</p>
-            <!-- 添加音频元素 -->
-            <audio controls>
-                <source src="MP3/人工智能.mp3" type="audio/mpeg">
-                您的浏览器不支持 audio 元素。
-            </audio>
-            <a href="">无歌词</a>
+            <div style="margin-top: 10px;">
+                <a href="歌词/新年如意歌.txt" target="_blank">查看完整歌词</a>
+                <button onclick="navigator.share({ title: '新年如意歌', text: '听听这首由通义生成歌词、豆包生成音乐的新年如意歌吧！', url: window.location.href })" style="cursor: pointer; background-color: #007BFF; color: white; border: none; padding: 5px 10px; border-radius: 5px;">分享</button>
+            </div>
         </div>
     </section>
 
