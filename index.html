@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>AiBaseConnect - 智能链接，无限潜能</title>
+    <style>
+        /* 通用样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* 头部样式 */
+        header {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        /* 轮播图样式 */
+     .slider {
+            margin: 20px auto;
+            width: 90%;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 10px;
+            position: relative;
+        }
+        #carousel {
+            display: flex;
+            overflow: hidden;
+        }
+        #carousel img {
+            width: 200px;
+            height: 200px; /* 设置固定高度 */
+            object-fit: cover; /* 保持图片比例并覆盖容器 */
+            transition: transform 0.5s ease-in-out;
+        }
+        /* 内容部分样式 */
+     .content-section {
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+        }
+        /* 成员卡片样式 */
+     .members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+     .member-card {
+            flex-basis: calc(20% - 20px);
+            margin: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+     .member-card img {
+            width: 100px; /* 设置固定宽度 */
+            height: 100px; /* 设置固定高度 */
+            object-fit: cover; /* 保持图片比例并覆盖容器 */
+        }
+        /* 项目卡片样式 */
+     .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+     .project-card {
+            flex-basis: calc(33.33% - 20px);
+            margin: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+     .project-card img {
+            width: 150px;
+            height: 150px; /* 设置固定高度 */
+            object-fit: cover; /* 保持图片比例并覆盖容器 */
+        }
+        /* 页脚样式 */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+      .project-card button {
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+      .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            border-bottom: 1px dashed #007BFF;
+        }
+      .project-card a:hover {
+            color: #0056b3;
+            border-bottom: 1px solid #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/logo.jpg" alt="AiBaseConnect 的标志，点击可返回首页" style="max-width:100px;">
+        <h1>AiBaseConnect</h1>
+        <p>智能链接，无限潜能</p>
+        <nav id="main-nav">
+            <a href="#members" title="查看成员风采">关于我们</a>
+            <a href="#projects" title="查看项目成果">项目成果</a>
+            <a href="#contact" title="联系我们">联系我们</a>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <!-- 轮播图区域 -->
+        <div id="carousel">
+            <img src="image/轮播图1.png" alt="轮播图 1">
+            <img src="image/轮播图2.png" alt="轮播图 2">
+            <img src="image/轮播图1.png" alt="轮播图 1">
+            <img src="image/轮播图2.png" alt="轮播图 2">
+            <!-- 可以添加更多轮播图图片，并添加轮播图脚本代码 -->
+        </div>
+    </div>
+    <h2>关于我们</h2>
+    <section id="members" class="content-section members">
+        <!-- 成员卡片 -->
+        <div class="member-card">
+            <img src="image/glk.jpg" alt="成员 1 的头像">
+            <h3>郭灵凯</h3>
+            <p>组长  模型推理师</p>
+            <p><a href="mailto:2769314619@qq.com">2769314619@qq.com</a></p>
+        </div>
+        <div class="member-card">
+            <img src="image/zfz.png" alt="成员 1 的头像">
+            <h3>赵辅灼</h3>
+            <p>图片训练师</p>
+            <p><a href="mailto:15583511563@qq.com">15583511563@qq.com</a></p>
+        </div>
+        <div class="member-card">
+            <img src="image/jhf.jpg" alt="成员 1 的头像">
+            <h3>靳洪飞</h3>
+            <p>文档训练师</p>
+            <p><a href="mailto:3489054404@qq.com">3489054404@qq.com</a></p>
+        </div>
+        <div class="member-card">
+            <img src="image/sbx.jpg" alt="成员 1 的头像">
+            <h3>孙波鑫</h3>
+            <p>音频训练师</p>
+            <p><a href="mailto:2179528825@qq.com">2179528825@qq.com</a></p>
+        </div>
+        <div class="member-card">
+            <img src="image/xj.jpg" alt="成员 1 的头像">
+            <h3>熊俊</h3>
+            <p>数据标注师</p>
+            <p><a href="mailto:2071637936@qq.com">2071637936@qq.com</a></p>
+        </div>
+    </section>
+    <h2>项目成果</h2>
+    <section id="projects" class="content-section projects">
+        <!-- 项目展示 -->
+        <div class="project-card">
+            <!-- 设置固定尺寸并确保图片适应容器 -->
+            <img src="image/新年如意歌.png" alt="《新年如意歌》的图片" style="width: 100%; height: auto; max-width: 300px;">
+            <h3>《新年如意歌》</h3>
+            <p>由通义生成歌词,豆包生成音乐</p>
+            <!-- 使用更可靠的音频链接方式 -->
+            <audio controls>
+                <source src="MP3/蛇年如意春.mp4" type="audio/mpeg">
+                您的浏览器不支持 audio 元素。
+            </audio>
+            <div style="margin-top: 10px;">
+                <a href="歌词/新年如意歌.txt" target="_blank">查看完整歌词</a>
+                <button onclick="navigator.share({ title: '新年如意歌', text: '听听这首由通义生成歌词、豆包生成音乐的新年如意歌吧！', url: window.location.href })" style="cursor: pointer; background-color: #007BFF; color: white; border: none; padding: 5px 10px; border-radius: 5px;">分享</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>联系我们 | <a href="https://guolingkai.github.io">guolingkai.github.io</a></p>
+        <p>&copy; 2025 AiBaseConnect. 版权所有。</p>
+    </footer>
+    <script>
+        // 简单的轮播图脚本
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('#carousel img');
+        const totalSlides = slides.length;
+
+        function showSlides() {
+            for (let i = 0; i < totalSlides; i++) {
+                slides[i].style.transform = `translateX(-${slideIndex * 100}%)`;
+            }
+            slideIndex++;
+            if (slideIndex >= totalSlides) {
+                slideIndex = 0;
+            }
+            setTimeout(showSlides, 3000); // 3秒切换一次
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>
